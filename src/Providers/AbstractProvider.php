@@ -26,6 +26,7 @@ use Symfony\Component\HttpFoundation\Request;
  */
 abstract class AbstractProvider implements ProviderInterface
 {
+    protected $test;
     /**
      * Provider name.
      *
