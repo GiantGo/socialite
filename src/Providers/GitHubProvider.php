@@ -97,7 +97,6 @@ class GitHubProvider extends AbstractProvider implements ProviderInterface
     {
         return new User([
             'id' => $this->arrayItem($user, 'id'),
-            'username' => $this->arrayItem($user, 'login'),
             'nickname' => $this->arrayItem($user, 'login'),
             'name' => $this->arrayItem($user, 'name'),
             'email' => $this->arrayItem($user, 'email'),

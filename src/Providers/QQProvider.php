@@ -18,7 +18,7 @@ use Overtrue\Socialite\User;
 /**
  * Class QQProvider.
  *
- * @see http://wiki.connect.qq.com/oauth2-0%E7%AE%80%E4%BB%8B [QQ - OAuth 2.0 登录QQ]
+ * @link http://wiki.connect.qq.com/oauth2-0%E7%AE%80%E4%BB%8B [QQ - OAuth 2.0 登录QQ]
  */
 class QQProvider extends AbstractProvider implements ProviderInterface
 {

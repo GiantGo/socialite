@@ -18,7 +18,7 @@ use Overtrue\Socialite\User;
 /**
  * Class FacebookProvider.
  *
- * @see https://developers.facebook.com/docs/graph-api [Facebook - Graph API]
+ * @link https://developers.facebook.com/docs/graph-api [Facebook - Graph API]
  */
 class FacebookProvider extends AbstractProvider implements ProviderInterface
 {
@@ -34,7 +34,7 @@ class FacebookProvider extends AbstractProvider implements ProviderInterface
      *
      * @var string
      */
-    protected $version = 'v2.9';
+    protected $version = 'v2.5';
 
     /**
      * The user fields being requested.
@@ -87,6 +87,16 @@ class FacebookProvider extends AbstractProvider implements ProviderInterface
         ]);
 
         return $this->parseAccessToken($response->getBody());
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function parseAccessToken($body)
+    {
+        parse_str($body, $token);
+
+        return parent::parseAccessToken($token);
     }
 
     /**

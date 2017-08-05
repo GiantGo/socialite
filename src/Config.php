@@ -106,7 +106,7 @@ class Config implements ArrayAccess
     /**
      * Whether a offset exists.
      *
-     * @see  http://php.net/manual/en/arrayaccess.offsetexists.php
+     * @link  http://php.net/manual/en/arrayaccess.offsetexists.php
      *
      * @param mixed $offset <p>
      *                      An offset to check for.
@@ -127,7 +127,7 @@ class Config implements ArrayAccess
     /**
      * Offset to retrieve.
      *
-     * @see  http://php.net/manual/en/arrayaccess.offsetget.php
+     * @link  http://php.net/manual/en/arrayaccess.offsetget.php
      *
      * @param mixed $offset <p>
      *                      The offset to retrieve.
@@ -145,7 +145,7 @@ class Config implements ArrayAccess
     /**
      * Offset to set.
      *
-     * @see  http://php.net/manual/en/arrayaccess.offsetset.php
+     * @link  http://php.net/manual/en/arrayaccess.offsetset.php
      *
      * @param mixed $offset <p>
      *                      The offset to assign the value to.
@@ -164,7 +164,7 @@ class Config implements ArrayAccess
     /**
      * Offset to unset.
      *
-     * @see  http://php.net/manual/en/arrayaccess.offsetunset.php
+     * @link  http://php.net/manual/en/arrayaccess.offsetunset.php
      *
      * @param mixed $offset <p>
      *                      The offset to unset.
